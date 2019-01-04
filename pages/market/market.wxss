@@ -1,0 +1,142 @@
+/* pages/market/market.wxss */
+page{
+  height:100%;
+}
+view {
+  font-family: "Microsoft YaHei",Verdana,Arial,Helvetica,sans-serif;
+}
+label{
+  font-family: "Microsoft YaHei",Verdana,Arial,Helvetica,sans-serif;
+}
+.shop-title{
+  display: block;
+  border: 0px solid black;
+  height: 20%;
+  background-color:rgb(112,191,65);
+}
+.shop-name{
+  display: block;
+  top:40%;
+  left:20rpx;
+  position: relative;
+  color:white;
+}
+.item-list{
+  width:20%;
+  height: 80%;
+  border: 0px solid black;
+  display: inline-block;
+}
+.item-info-list{
+  width:78%;
+  height: 80%;
+  right: 0;
+  border: 0px solid black;
+  display: inline-block;
+  position: absolute;
+}
+.item-name-outer-list{
+  height: 12%;
+}
+.item-name-outer {
+  height:100%;
+  border: 0px solid black;
+  background-color:#ebecea;
+}
+.item-name-outer-selected{
+  background-color: white;
+}
+.item-name{
+  width:100%;
+  height: 100%;
+  border: 0px solid black;
+  top:30%;
+  left:14rpx;
+  position: relative;
+  font-size: 12px;
+  color: #666666;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 21px;
+  
+}
+.item-name-selected{
+  background-color: white;
+}
+.item-info-outer {
+  height:20%;
+}
+.item-info{
+  width:100%;
+  height: 100%;
+  border: 0px solid black;
+  text-align: left;
+  position: relative;
+}
+.item-info-image{
+  height: 65px;
+  width: 65px;
+  left:0rpx;
+  border: 0px solid black;
+  display: inline-block;
+  vertical-align:top;
+}
+.item-info-detail{
+  display: inline-block;
+  width:65%;
+  border: 0px solid black;
+  height: 150rpx;
+  margin-left:40rpx;
+  position: relative;
+}
+.item-info-title{
+  height: 40rpx;
+  width:100%;
+  font-weight: normal;
+  display: inline-block;
+  border: 0px solid black;
+  font-size: 15px;
+  color:#333;
+  line-height: 20px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.item-info-sells{
+  margin-top: 5rpx;
+  font-size: 11px;
+  color:#666666;
+}
+.item-info-price{
+  font-size:35rpx;
+  color: #ff3434;
+  bottom: 1rpx;
+  position: absolute;
+}
+.item-info-ops{
+  width:90px;
+  height:65px;
+  right:25rpx;
+  bottom: 5rpx;
+  position: absolute;
+  border: 0px solid black;
+}
+.item-info-ops-img {
+  width: 50rpx;
+  height:50rpx;
+  bottom: 10rpx;
+  display: inline-block;
+   position: absolute;
+}
+.item-info-del{
+  left:1rpx;
+}
+.item-info-add{
+  right: 1rpx;
+}
+.item-info-num{
+  font-size: 30rpx;
+  display: inline-block;
+  bottom: 15rpx;
+  position: absolute;
+  left:45%;
+}

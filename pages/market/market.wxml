@@ -1,0 +1,39 @@
+<!--pages/market/market.wxml-->
+<view class="shop-title">
+  <label class="shop-name">测试名称</label>
+</view>
+<scroll-view class="item-list" 
+  scroll-y
+>
+<view wx:for="{{category_list}}" class="item-name-outer-list ">
+<view wx:if="{{item == cur_category.category}}"  class="item-name-outer item-name-outer-selected">
+  <view class="item-name">{{item}}</view>
+  </view>
+  <view wx:else class="item-name-outer">
+  <view class="item-name">{{item}}</view>
+  </view>
+</view>
+
+</scroll-view>
+<scroll-view class="item-info-list"
+  scroll-y
+>
+<view wx:for="{{item_list[cur_category.category]}}" class="item-info-outer">
+  <view class="item-info" catchtap="tapItem">
+     <image class="item-info-image" src="shop-pic.jpg">
+      </image>
+      <view class="item-info-detail">
+         <view class="item-info-title">{{item.title}}</view>
+         <view class="item-info-sells"> 月售{{item.sellNum}}件</view>
+         <view class="item-info-price">￥{{item.price}}</view>
+       </view>
+      <view class="item-info-ops">
+           <image class="item-info-del item-info-ops-img"    src="del-icon.png">
+           </image>
+          <view class="item-info-num">1</view>
+          <image class="item-info-add item-info-ops-img" src="add-icon.png">
+          </image>
+      </view>
+  </view>
+</view>
+</scroll-view>
